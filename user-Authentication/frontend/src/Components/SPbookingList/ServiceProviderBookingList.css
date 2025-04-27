@@ -1,0 +1,36 @@
+.booking-list-container {
+    padding: 20px;
+  }
+  
+  .booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .booking-table th, .booking-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .booking-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .status-dropdown {
+    padding: 6px;
+    border-radius: 4px;
+  }
+  
+  /* Optional: different colors based on status */
+  .status-dropdown.confirmed {
+    background-color: #d4edda;
+  }
+  .status-dropdown.pending {
+    background-color: #fff3cd;
+  }
+  .status-dropdown.completed {
+    background-color: #cce5ff;
+  }
+  

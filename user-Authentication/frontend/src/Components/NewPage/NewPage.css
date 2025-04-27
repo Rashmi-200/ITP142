@@ -1,0 +1,78 @@
+/* NewPage.css */
+
+.new-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('../Images/wo1.jpg') no-repeat center center/cover; /* Background Image */
+  background-size: cover; /* Ensures the image covers the full page */
+  padding: 40px;
+  box-sizing: border-box;
+  filter: brightness(0.7); /* Optionally add brightness filter to darken the image */
+}
+
+.new-page-container h2 {
+  font-size: 2.5rem;
+  color: #fff; /* White text color for better contrast with the background */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+}
+
+.new-page-container p {
+  font-size: 1.2rem;
+  color: #ecf0f1; /* Lighter text color for better visibility */
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.new-page-buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.new-page-button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+.new-page-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.new-page-button:focus {
+  outline: none;
+}
+
+.new-page-button:active {
+  background-color: #1f618d;
+  transform: translateY(1px);
+}
+
+/* Add a soft hover effect for the container for a more dynamic feel */
+.new-page-container:hover {
+  background: url('../Images/wo1.jpg') no-repeat center center/cover; /* Reapply background on hover */
+  background-size: cover;
+}
+
+.new-page-button.admin-button {
+  background-color: #1f618d;
+  color: #fff;
+  margin-top: 10px;
+}
+

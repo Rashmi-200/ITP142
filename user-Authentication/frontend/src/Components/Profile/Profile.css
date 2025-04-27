@@ -1,0 +1,89 @@
+.profile-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.profile-details {
+  margin-bottom: 20px;
+}
+
+.profile-details p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.profile-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.update-btn, .cancel-btn, .delete-btn, .verify-email-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.verify-email-btn {
+  background-color: #2196F3;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+}
+
+.update-btn:hover, .delete-btn:hover, .verify-email-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn:hover {
+  background-color: #e53935;
+}
+
+.verify-email-btn:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.availability-section {
+  margin-top: 10px;
+}
+
+.availability-slot {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.availability-slot select,
+.availability-slot input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-slot-btn,
+.remove-slot-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-slot-btn {
+  background-color: #dc3545;
+}
+
+.add-slot-btn:hover,
+.remove-slot-btn:hover {
+  opacity: 0.9;
+}

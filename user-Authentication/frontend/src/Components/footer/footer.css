@@ -1,0 +1,109 @@
+/* Footer Container */
+.footer {
+    background-color: #0d345e; /* Dark Navy */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Logo & Name */
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+}
+
+/* Quick Links */
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #ffcc00; /* Yellow Highlight */
+}
+
+/* Contact Info */
+.footer-contact p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Services Description */
+.footer-services {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Social Media Icons */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ffcc00;
+}
+
+/* Bottom Copyright Section */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
