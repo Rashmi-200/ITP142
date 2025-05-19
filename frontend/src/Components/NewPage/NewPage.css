@@ -1,0 +1,58 @@
+.new-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  min-height: 80vh;
+  background: linear-gradient(to right, #f9f9f9, #e3f2fd);
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.new-page-title {
+  font-size: 36px;
+  color: navy;
+  margin-bottom: 10px;
+}
+
+.new-page-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.new-page-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.new-page-button {
+  background-color: navy;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.new-page-button:hover {
+  background-color: #0d3b66;
+  transform: translateY(-2px);
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

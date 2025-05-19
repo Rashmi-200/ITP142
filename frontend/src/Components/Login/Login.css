@@ -1,0 +1,134 @@
+/* Page Background */
+.login-page {
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 50, 0.7), rgba(0, 0, 50, 0.7)), url('../Images/wo1.jpg') no-repeat center center/cover;
+}
+
+/* Container */
+.login-container {
+  background: white;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titles */
+.login-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.login-container p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Error Message */
+.error-message {
+  color: #dc3545;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Form */
+.login-form,
+.service-provider-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Inputs and Select */
+.login-form input,
+.service-provider-form input,
+.service-provider-form select {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s;
+  width: 100%;
+}
+
+.login-form input:focus,
+.service-provider-form input:focus,
+.service-provider-form select:focus {
+  border: 1px solid #007BFF;
+  outline: none;
+}
+
+/* Button */
+.login-form button,
+.service-provider-form button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-top: 5px;
+}
+
+.login-form button:hover,
+.service-provider-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Links */
+.toggle-link,
+.forgot-link {
+  color: #007BFF;
+  font-size: 14px;
+  margin-top: 8px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.toggle-link:hover,
+.forgot-link:hover {
+  color: #0056b3;
+}
+
+/* Provider Signup Two Columns */
+.service-provider-form .row {
+  display: flex;
+  gap: 12px;
+}
+
+.service-provider-form .row input,
+.service-provider-form .row select {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .service-provider-form .row {
+    flex-direction: column;
+  }
+}

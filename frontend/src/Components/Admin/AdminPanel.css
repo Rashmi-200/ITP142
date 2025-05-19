@@ -1,0 +1,112 @@
+.admin-panel {
+  padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loading, .error {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px 15px;
+  width: 300px;
+  border: 1px solid #2b6cb0;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search-btn, .download-btn {
+  padding: 10px 20px;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-btn:hover, .download-btn:hover {
+  background-color: #2c5282;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.provider-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.provider-table th, .provider-table td {
+  padding: 14px 18px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.provider-table th {
+  background: linear-gradient(to right, #3182ce, #63b3ed);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.provider-table tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+.provider-table tr:hover {
+  background-color: #ebf8ff;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.delete-btn, .edit-btn, .save-btn, .cancel-btn {
+  padding: 8px 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e53e3e;
+}
+
+.edit-btn, .save-btn {
+  background-color: #3182ce;
+}
+
+.cancel-btn {
+  background-color: #718096;
+}
+
+.delete-btn:hover {
+  background-color: #c53030;
+}
+
+.edit-btn:hover, .save-btn:hover {
+  background-color: #2c5282;
+}
+
+.cancel-btn:hover {
+  background-color: #4a5568;
+}

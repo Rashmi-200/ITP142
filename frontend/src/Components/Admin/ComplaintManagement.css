@@ -1,0 +1,39 @@
+.complaint-management-container {
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .complaint-management-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .complaint-management-container th,
+  .complaint-management-container td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .complaint-management-container th {
+    background-color: #f0f0f0;
+  }
+  
+  .complaint-management-container button {
+    margin-right: 10px;
+    padding: 6px 10px;
+    background-color: #5b9bd5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .complaint-management-container button:hover {
+    background-color: #4a8acb;
+  }
+  

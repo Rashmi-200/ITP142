@@ -1,0 +1,42 @@
+.certification-container {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.certification-list {
+    list-style: none;
+    padding: 0;
+}
+
+.certification-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.file-type {
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+.file-link {
+    flex-grow: 1;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.file-link:hover {
+    text-decoration: underline;
+}
+
+.verification-status {
+    margin-left: 15px;
+    color: #666;
+    font-style: italic;
+}

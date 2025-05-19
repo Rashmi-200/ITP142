@@ -1,0 +1,179 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 30px;
+    box-shadow: 1px 1px 3px -2px black;
+    background-color: white;
+    animation: fadeSlideDown 0.5s ease-in-out both;
+}
+
+/* Logo Section */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.02);
+}
+
+.nav-logo img {
+    max-height: 80px;
+    width: auto;
+}
+
+.nav-logo p {
+    color: navy;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Navbar Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: auto;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li:hover {
+    transform: translateY(-2px);
+}
+
+.nav-menu li.active {
+    color: navy;
+    font-weight: 600;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: navy;
+    transition: all 0.3s ease;
+}
+
+/* Phone Number */
+.nav-contact {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-right: 20px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.nav-contact:hover {
+    opacity: 1;
+}
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons button {
+    width: 120px;
+    height: 45px;
+    border: 1px solid #7a7a7a;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Login Button */
+.login-btn {
+    background: white;
+    color: black;
+    padding: 8px 16px;
+}
+
+.login-btn:hover {
+    background: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Sign Up + Logout Button */
+.signup-btn {
+    background: navy;
+    color: white;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+    background: #0d345ea8;
+    transform: scale(1.05);
+}
+
+/* Profile Icon */
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.profile-icon:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.profile-icon.active-profile {
+    border: 2px solid navy;
+    padding: 2px;
+}
+
+/* Fade slide-down on load */
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-right: 0;
+    }
+
+    .nav-buttons {
+        margin-top: 10px;
+    }
+}
